@@ -4,11 +4,11 @@ A website that brings together practical information for farmers in India: ferti
 
 **Live demo:** https://nadeem-coder28.github.io/Roots-of-change/
 
-*Team project for the Design Thinking & Innovation course (B.Tech Computer Science and Engineering, 4th semester) at Bennett University, 2024. The website was developed mainly by Mohammad Nadeem.*
+*Academic project at Bennett University (2024) aimed at modernizing agriculture by giving farmers easy access to practical information and services in one place.*
 
 ## Problem
 
-Many farmers lack easy access to reliable agricultural information. The project focuses on four problems identified during the design thinking process:
+Many farmers lack easy access to reliable agricultural information. The project focuses on four problems:
 
 - limited knowledge of correct fertilizer use for their soil and crops
 - low awareness of government schemes that could support them
