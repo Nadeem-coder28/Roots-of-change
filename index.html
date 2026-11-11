@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<head>
+    <title>Roots of Change &hearts;</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div id="roc">
+        <img src="logo.png" style="width: 400px; height:100px; margin-left: 38%; " >
+    </div>
+    <div id="navbar" class="nav">
+        <a href="index.html" style="color:#ffffff;">Home </a>
+        <a href="SellLand.html" style="color:#ffffff;">Sell Land</a>
+        <a href="SellCrop.html" style="color:#ffffff;">Sell Crop</a>
+        <a href="Fertilizers.html" style="color:#ffffff;">Fertilizers</a>
+        <a href="GovtSchems.html" style="color:#ffffff;">Govt Schemes</a>
+        <a href="Animals.html" style="color:#ffffff;">Animals</a>
+        <a href="about.html" style="color:#ffffff;">About Us</a>
+    </div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+      <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <img src="pexels-pixabay-461960.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pexels-pixabay-533848.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pexels-quang-nguyen-vinh-222549-2131784.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="pexels-rodolfoclix-1615785.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="pexels-sergei-a-1322276-2589457.jpg" style="width:100%">
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+    </body>
+    
+
+    <!-- <div id="logo">
+        <img src="about3.avif" style="height: 500px; width:100%">
+    </div>
+    <div id="about">
+        <img src="about4.png" style="height: 100px;width: 400px;">
+    </div>
+    <div id="description">
+        <img src="1.avif" style="height: 400px;width:auto">
+    </div> 
+    <h2>Introduction To Roots Of Change</h2>
+    <p>This application provides a user-friendly access to all farmers who may not be aware of the various types of crops suitable for cultivation in their area, as well as the different types of diseases that can cause damage to their crops. Furthermore, it aims to acquaint farmers with the various schemes provided by the government to support them, and to introduce different methods to enhance crop production. Additionally, it is beneficial for individuals interested in buying or selling land. This platform simplifies the process for farmers to sell their crops and for buyers to find high-quality produce from local farmers. Moreover, it serves as a valuable resource for raising various types of domestic animals, offering information on their suitable habitat and diet.</p>-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Description</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .anim {
+        width: 150px;
+        height: 100px;
+        border: 2px solid green;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 10px;
+        line-height: 100px;
+        transition: transform 0.3s ease; /* Smooth transition for transform property */
+      }
+      .anim:hover {
+        transform: scale(1.1); /* Scale up on hover */
+      }
+      #projectText {
+        margin: 20px auto;
+        width: 80%;
+        text-align: justify;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.5s ease; /* Smooth transition for opacity */
+        overflow: hidden; /* Clip any overflowing content */
+        display: flex; /* Use flexbox layout */
+        align-items: center; /* Center vertically */
+      }
+      #projectText.show {
+        opacity: 1; /* Show when class is applied */
+      }
+      #projectText img {
+        max-width: 100%;
+        max-height: 300px;
+        animation: moveLeft 0.5s forwards; /* Apply animation */
+      }
+      #projectText p {
+        margin-left: 20px; /* Space between image and text */
+      }
+      
+      @keyframes moveLeft {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+    </head>
+    <body>
+    
+    <div class="container">
+      <div class="anim" id="anima">
+        <b></b>
+      </div>
+      <div class="anim" id="animat">
+        <b></b>
+      </div>
+      <div class="anim" id="animati">
+        <b></b>
+      </div>
+    </div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var projectTextId = "projectText";
+    
+        document.getElementById("anima").addEventListener("click", function() {
+            removePreviousProject();
+            createProjectText("Our project aims to provide user-friendly access to all farmers who may not be aware of the various types of crops suitable for cultivation in their area, as well as the different types of diseases that can cause damage to their crops. Furthermore, it aims to acquaint farmers with the various schemes provided by the government to support them, and to introduce different methods to enhance crop production. Additionally, it is beneficial for individuals interested in buying or selling land. This platform simplifies the process for farmers to sell their crops and for buyers to find high-quality produce from local farmers. Moreover, it serves as a valuable resource for raising various types of domestic animals, offering information on their suitable habitat and diet.", "intro.jpg");
+        });
+    
+        document.getElementById("animat").addEventListener("click", function() {
+            removePreviousProject();
+            createProjectText("Our project embodies a steadfast commitment to environmental stewardship and sustainability. By leveraging innovative technologies and eco-conscious practices, we prioritize the preservation and enhancement of our natural ecosystems. From inception to execution, every facet of our project is meticulously designed to minimize ecological footprint and promote harmonious coexistence with nature.Through the implementation of renewable energy sources, adoption of organic farming techniques, and utilization of biodegradable materials, we strive to mitigate environmental degradation while fostering a greener tomorrow. Furthermore, our project actively promotes biodiversity conservation, safeguarding precious habitats and protecting endangered species.By embracing eco-friendly principles at its core, our project stands as a beacon of sustainability, inspiring positive change and leading the way towards a cleaner, healthier planet.", "ecofriendly.jpg");
+        });
+    
+        document.getElementById("animati").addEventListener("click", function() {
+            removePreviousProject();
+            createProjectText("Our project encompasses a comprehensive solution aimed at empowering farmers and fostering agricultural sustainability. Through a user-friendly digital platform, we provide invaluable resources and support to farmers, enabling them to optimize crop cultivation, mitigate risks, and maximize yields.At its heart, our project serves as a centralized hub for agricultural information, offering insights into crop suitability, disease management, and government support programs. By leveraging data analytics and machine learning algorithms, we deliver personalized recommendations tailored to the unique needs and conditions of each farmer.Moreover, our project facilitates transparent and efficient market transactions, connecting farmers directly with consumers and buyers. This streamlined approach not only ensures fair pricing and accessibility but also promotes local economies and reduces carbon footprint associated with food distribution.With a focus on innovation and sustainability, our project is poised to revolutionize the agricultural landscape, empowering farmers, enhancing food security, and contributing to the advancement of a more resilient and inclusive agricultural sector.", "overview.png");
+        });
+    
+        function removePreviousProject() {
+            var previousProject = document.getElementById(projectTextId);
+            if (previousProject) {
+                previousProject.classList.remove("show"); // Remove 'show' class to hide
+                setTimeout(function() {
+                    previousProject.parentNode.removeChild(previousProject);
+                }, 500); // Wait for animation to complete before removing
+            }
+        }
+    
+        function createProjectText(text, imagePath) {
+            var projectText = document.createElement("div");
+            var textElement = document.createElement("p");
+            var imageElement = document.createElement("img");
+    
+            imageElement.src = imagePath;
+            projectText.appendChild(imageElement);
+    
+            textElement.textContent = text;
+            projectText.appendChild(textElement);
+    
+            projectText.id = projectTextId;
+            document.body.appendChild(projectText);
+    
+            // Triggering animation
+            setTimeout(function() {
+                projectText.classList.add("show"); // Add 'show' class to trigger animation
+            }, 100); // Delay to allow DOM rendering
+        }
+    });
+    </script>
+    
+    </body>
+    </html>
+
+    

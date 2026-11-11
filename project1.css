@@ -1,0 +1,199 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+a:hover{
+    /* background-color: black; */
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+#about{
+    margin-left: 500px;
+}
+/* p,h2{
+    margin-left: 750px;
+    margin-right: 200px;
+    text-align: justify;
+} */
+#description{
+    margin-left: 50px;
+    width: 200px;
+    float: left;
+}
+p{
+    font-size: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #0d75ec;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#stateSchemes {
+    margin-top: 20px;
+}
+table, th, td {
+    border:1px solid black;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-buy-sell {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-buy-sell:hover {
+    background-color: #45a049;
+}
+
+.land-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.land-details h3 {
+    margin-top: 0;
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  .nav a {
+    padding: .3em .5em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 10px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: #00f947;
+  }
+  .anim:hover{
+    background-color: #00f947;
+  }

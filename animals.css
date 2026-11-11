@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center; /* Centering all content */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#animal-select {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#animal-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block; /* Displaying div as inline-block for centering */
+    text-align: left; /* Reset text-align for inner content */
+}
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  .nav a {
+    padding: .3em .5em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 10px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: #00f947;
+  }
+  .anim:hover{
+    background-color: #00f947;
+  }

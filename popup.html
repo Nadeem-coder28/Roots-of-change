@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <title>Roots of Change &hearts;</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <div id="roc">
+        <img src="logo.png" style="width: 400px; height:100px; margin-left: 38%;" >
+    </div>
+    <div id="navbar" class="nav">
+        <a href="index.html" style="color:#ffffff;">Home </a>
+        <a href="SellLand.html" style="color:#ffffff;">Sell Land</a>
+        <a href="SellCrop.html" style="color:#ffffff;">Sell Crop</a>
+        <a href="Fertilizers.html" style="color:#ffffff;">Fertilizers</a>
+        <a href="GovtSchems.html" style="color:#ffffff;">GovtSchems</a>
+        <a href="Animals.html" style="color:#ffffff;">Animals</a>
+        <a href="about.html" style="color:#ffffff;">About Us</a>
+
+    </div>
+    <div class="container" style="background-color:  #4CAF50">
+        <h1 style="color: white;">Fertilizer Recommendations </h1>
+        <label for="stateSelect" style="color: black"><b style="color: white;">Select a State:</b> </label>
+        <input type="text" id="stateSearch" onkeyup="searchStates()" placeholder="Search for a state...">
+        <select id="stateSelect" style="display: none;" onchange="showStateSchemes()">
+            <option value="" disabled selected>Select a State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam"></option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="NewDelhi">NewDelhi</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttarakhand">uttarakhand</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="arunachal pradesh">arunachal pradesh</option>
+            <option value="arunachalpradesh">arunachal pradesh</option>
+            <option value="assam">assam</option>
+            <option value="bihar">bihar</option>
+            <option value="chhattisgarh">chhattisgarh</option>
+            <option value="goa">goa</option>
+            <option value="gujarat">gujarat</option>
+            <option value="haryana">haryana</option>
+            <option value="himachal pradesh">himachal pradesh</option>
+            <option value="himachalpradesh">himachal pradesh</option>
+            <option value="jharkhand">jharkhand</option>
+            <option value="karnataka">karnataka</option>
+            <option value="kerala">kerala</option>
+            <option value="madhya pradesh">madhya pradesh</option>
+            <option value="madhyapradesh">madhya pradesh</option>
+            <option value="maharashtra">maharashtra</option>
+            <option value="manipur">manipur</option>
+            <option value="meghalaya">meghalaya</option>
+            <option value="mizoram">mizoram</option>
+            <option value="nagaland">nagaland</option>
+            <option value="newdelhi">newdelhi</option>
+            <option value="odisha">odisha</option>
+            <option value="punjab">punjab</option>
+            <option value="rajasthan">rajasthan</option>
+            <option value="sikkim">sikkim</option>
+            <option value="tamil nadu">tamil nadu</option>
+            <option value="tamilnadu">tamil nadu</option>
+            <option value="telangana">telangana</option>
+            <option value="tripura">tripura</option>
+            <option value="uttarakhand">uttarakhand</option>
+            <option value="uttar pradesh">uttar pradesh</option>
+            <option value="uttarpradesh">uttar pradesh</option>
+            <option value="Uttar Pradesh">uttar pradesh</option>
+            <option value="UTTARPRADESH">uttar pradesh</option>
+            <option value="andhra pradesh">andhra pradesh</option>
+            <option value="ANDHRA PRADESH">Andhra Pradesh</option>
+            <option value="ARUNACHAL PRADESH">Arunachal Pradesh</option>
+            <option value="ASSAM">Assam</option>
+            <option value="BIHAR">Bihar</option>
+            <option value="CHHATTISGARH">Chhattisgarh</option>
+            <option value="GOA">Goa</option>
+            <option value="GUJARAT">Gujarat</option>
+            <option value="HARYANA">Haryana</option>
+            <option value="HIMACHAL PRADESH">Himachal Pradesh</option>
+            <option value="JHARKHAND">Jharkhand</option>
+            <option value="KARNATAKA">Karnataka</option>
+            <option value="KERALA">Kerala</option>
+            <option value="MADHYA PRADESH">Madhya Pradesh</option>
+            <option value="MAHARASHTRA">Maharashtra</option>
+            <option value="MANIPUR">Manipur</option>
+            <option value="MEGHALAYA">Meghalaya</option>
+            <option value="MIZORAM">Mizoram</option>
+            <option value="NAGALAND">Nagaland</option>
+            <option value="NEWDELHI">NewDelhi</option>
+            <option value="ODISHA">Odisha</option>
+            <option value="PUNJAB">Punjab</option>
+            <option value="RAJASTHAN">Rajasthan</option>
+            <option value="SIKKIM">Sikkim</option>
+            <option value="TAMIL NADU">Tamil Nadu</option>
+            <option value="TELANGANA">Telangana</option>
+            <option value="TRIPURA">Tripura</option>
+            <option value="UTTARAKHAND">Uttarakhand</option>
+            <option value="UTTAR PRADESH"></option>
+            <!-- Add other state options -->
+        </select>
+        <div id="stateSchemes"></div>
+        <div id="schemeDetails"></div>
+    </div>
+
+    <script src="project1.js"></script>
+</body>
+</html>
