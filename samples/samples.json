@@ -1,0 +1,26 @@
+[
+ {
+  "file": "tomato_late_blight.jpg",
+  "label": "Tomato___Late_blight"
+ },
+ {
+  "file": "potato_early_blight.jpg",
+  "label": "Potato___Early_blight"
+ },
+ {
+  "file": "apple_black_rot.jpg",
+  "label": "Apple___Black_rot"
+ },
+ {
+  "file": "corn_maize_common_rust_.jpg",
+  "label": "Corn_(maize)___Common_rust_"
+ },
+ {
+  "file": "grape_black_rot.jpg",
+  "label": "Grape___Black_rot"
+ },
+ {
+  "file": "tomato_healthy.jpg",
+  "label": "Tomato___healthy"
+ }
+]
