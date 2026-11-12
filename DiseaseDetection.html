@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots of Change &hearts; Plant Disease Detection</title>
+    <link rel="stylesheet" href="disease.css">
+</head>
+<body>
+    <div id="roc">
+        <img src="logo.png" alt="Roots of Change">
+    </div>
+    <div id="navbar" class="nav">
+        <a href="index.html">Home</a>
+        <a href="SellLand.html">Sell Land</a>
+        <a href="SellCrop.html">Sell Crop</a>
+        <a href="Fertilizers.html">Fertilizers</a>
+        <a href="GovtSchems.html">Govt Schemes</a>
+        <a href="Animals.html">Animals</a>
+        <a href="DiseaseDetection.html" class="active">Disease Detection</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <header class="page-header">
+        <h1>Plant Disease Detection</h1>
+        <p>Upload a photo of a leaf and our AI model will identify the crop and tell you whether it looks healthy or which disease it may have.</p>
+    </header>
+
+    <main class="detector">
+        <section class="card upload-card">
+            <h2>1. Upload a leaf photo</h2>
+            <label id="dropZone" class="drop-zone" for="fileInput">
+                <img id="preview" alt="Selected leaf" hidden>
+                <span id="dropText" class="drop-text">
+                    <strong>Drag and drop a photo here</strong>
+                    <span>or click to choose a file</span>
+                </span>
+            </label>
+            <input type="file" id="fileInput" accept="image/*" hidden>
+            <div class="actions">
+                <button id="detectBtn" class="btn btn-primary" disabled>Detect disease</button>
+                <button id="clearBtn" class="btn btn-secondary" disabled>Clear</button>
+            </div>
+            <div class="samples">
+                <h3>No photo? Try a sample leaf</h3>
+                <div id="sampleList" class="sample-list"></div>
+            </div>
+        </section>
+
+        <section class="card result-card">
+            <h2>2. Result</h2>
+            <p id="status" class="status loading">Loading the AI model...</p>
+            <div id="result" class="result" hidden>
+                <div id="resultMain" class="result-main">
+                    <span id="resultBadge" class="badge"></span>
+                    <p class="result-crop" id="resultCrop"></p>
+                    <p class="result-condition" id="resultCondition"></p>
+                    <p class="result-confidence" id="resultConfidence"></p>
+                </div>
+                <p id="resultAdvice" class="advice"></p>
+                <h3>Top 3 predictions</h3>
+                <ol id="topList" class="top-list"></ol>
+            </div>
+            <div class="tips">
+                <h3>Tips for a good result</h3>
+                <ul>
+                    <li>Photograph a single leaf, filling most of the picture.</li>
+                    <li>Use a plain background and good daylight.</li>
+                    <li>Make sure the leaf is in focus.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section class="card about-model">
+        <h2>About the AI model</h2>
+        <p>The detector is a convolutional neural network (CNN) trained on the PlantVillage dataset of 54,305 leaf images. It recognises 38 classes of healthy and diseased leaves from 14 crops: apple, blueberry, cherry, corn (maize), grape, orange, peach, bell pepper, potato, raspberry, soybean, squash, strawberry and tomato.</p>
+        <p>Two CNNs were trained and compared: a custom CNN built from scratch and MobileNetV2 fine-tuned with transfer learning. The website uses MobileNetV2, which reached 99.74% accuracy on 5,430 test images it had never seen during training.</p>
+        <p>The model runs entirely in your browser, so your photos are never uploaded to a server.</p>
+        <p class="disclaimer">The result is an estimate and does not replace advice from an agricultural expert. The model was trained on photos of single leaves taken under controlled conditions, so it may be less accurate for field photos or crops it was not trained on.</p>
+    </section>
+
+    <footer class="page-footer">
+        <p>Roots of Change &middot; Modernizing Agriculture</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+    <script src="disease.js"></script>
+</body>
+</html>
